@@ -1,118 +1,452 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع تعريفي لعرض شهاداتي العلمية والعملية</title>
-    <style>
-        /* تنسيقات عامة */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+    <title>portfolio-Mutaz</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-        body {
-            background: #0f0f1f;
-            color: #ffffff;
-        }
-
-        /* شريط التنقل */
-        .navbar {
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            background: rgba(15, 15, 31, 0.9);
-        }
-
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 30px;
-        }
-
-        /* قسم البطل (Hero Section) */
-        .hero {
-            text-align: center;
-            padding: 150px 20px;
-            background: linear-gradient(45deg, #2a2a4a, #0f0f1f);
-        }
-
-        .hero h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #00ff88, #00a3ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* أزرار */
-        .btn {
-            padding: 15px 30px;
-            border-radius: 30px;
-            border: none;
-            margin: 20px 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .btn-primary {
-            background: linear-gradient(45deg, #00ff88, #00a3ff);
-            color: #0f0f1f;
-        }
-
-        /* معرض الصور */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 50px;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 15px;
-            transition: transform 0.3s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">Mutaz tech</div>
-        <div>
-            <a href="#home">الرئيسية</a>
-            <a href="#gallery">المعرض</a>
-            <a href="#about">عنّا</a>
+    <section class="home" id="home">
+        <nav>
+          <h2>
+            <span class="mutaz">Mutaz</span>
+            <span class="tech"> Tech</span>
+          </h2>
+          <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact" class="btnn">Contact Me</a></li>
+          </ul>
+        </nav>
+        <div class="content">
+            <div class="container-text">
+                <h4 class="greeting">Hello, I'm </h4>
+                <h1 class="text-name">
+                    Mutaz Al-Bouq
+                </h1>
+                <h3 class="job-title"> Cybersecurity Engineer </h3>
+                <a href="https://drive.google.com/file/d/1wfAdI3Y5YEWIuMQfHSJZhR3tPyhYxiYu/view?usp=sharing"target="_blank" class="btnn1">Download Cv</a>
+
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/eng-mayar-almutairi-b32487211/" target="_blank"><img
+                            src="https://cdn-icons-png.flaticon.com/128/3938/3938044.png" alt="linkedin"></a>
+                    <a href="https://x.com/mayar_alardii" target="_blank"><img src="icone/x.png" alt="x"></a>
+                    <a href="https://wa.me/966558585007" target="_blank"><img src="https://img.icons8.com/ink/48/007bff/whatsapp.png"
+                            alt="whatsapp"></a>
+                    <a href="/cdn-cgi/l/email-protection#305d51495142421e4455535870575d51595c1e535f5d" target="_blank"><img src="https://img.icons8.com/?size=96&id=AqmeMIaHAeDY&format=png" alt="email"></a>
+                </div>
+            </div>
+            <div class="container-images">
+                <img src="image/mayarhero.png" alt="MutazPhoto" class="Mutazhero">
+            </div>
         </div>
-    </nav>
-
-    <section class="hero">
-        <h1>أنشئ فنونًا بالذكاء الاصطناعي</h1>
-        <p>حوّل أفكارك إلى لوحات رقمية مذهلة خلال ثوانٍ</p>
-        <button class="btn btn-primary">ابدأ الآن</button>
     </section>
 
-    <section class="gallery">
-        <img src="https://source.unsplash.com/random/600x600?ai-art,1" alt="AI Art 1">
-        <img src="https://source.unsplash.com/random/600x600?ai-art,2" alt="AI Art 2">
-        <img src="https://source.unsplash.com/random/600x600?ai-art,3" alt="AI Art 3">
+    <section class="about" id="about">
+  
+        <div class="container-texts">
+            <h1 class="aboutme">About Me</h1>
+
+            <p class="info">
+                I'm <strong>Mutaz Al-bouq </strong>, a graduate of<strong> Computer Science and Engineering </strong> with honors. I have <strong> 1+ years </strong> of
+                experience as a <strong> Software Engineer in the logistics field </strong> , where I possess extensive specialized
+                experience. My expertise spans from <strong> analyzing requirements and needs</strong>  to designing suitable user
+                interfaces <strong> (UX/UI)</strong> , implementing the necessary <strong> software solutions</strong> , and ultimately <strong> managing operations</strong> to
+                ensure seamless execution.
+            </p>
+        </div>
     </section>
 
+    <section class="experience" id="experience">
+        <div class="timeline" id="timeline">
+            <h2 class="headingg">My <span>Experiences</span></h2>
+            <p class="mydreams">✨ Each step of my journey contributes to a tapestry of knowledge, driven by my ongoing
+                passion for learning ✨</p>
+            <div class="timeline-row">
+
+                <div class="timeline-column">
+                    <h2 class="titlee">Education</h2>
+
+                    <div class="timeline-boxx">
+                        <div class="timeline-content">
+                            <div class="conttent">
+                                <div class="year"><i class='bx bxs-calendar'></i> Sep 2018 - June 2023</div>
+                                <h3><a href="https://drive.google.com/file/d/1iz1fJ0m8QKeITURjsfnKIB10pNgxLj-Q/view?usp=sharing" target="_blank">Bachelor Degree - Taibah University</a></h3>
+                                <p>I hold a Bachelor's degree with honors in Computer Science from the College of Computer Science and Engineering at Taibah University.
+                                </p>
+
+                            </div>
+                        </div>
+                        <h2 class="titlee">Certifications</h2>
+
+                        <div class="timeline-content">
+                            <div class="conttent">
+                                <div class="year"><i class='bx bxs-calendar'></i>Aug 2024</div>
+                                <h3><a href="https://drive.google.com/file/d/1HRbtiMkphFTNCP9E_15orlO6MPMy3qxZ/view?usp=sharing" target="_blank">Power Bi</a></h3>
+                                <p>
+                                    I have experience in data analysis and designing interactive reports. I gathered data from multiple sources and organized it, helping to transform it into actionable insights. I utilized various tools to create advanced dashboards, contributing to improved decision-making in the projects I worked on.
+                                </p>
+
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-content">
+                            <div class="conttent">
+                                <div class="year"><i class='bx bxs-calendar'></i>Aug 2024</div>
+                                <h3><a href="https://drive.google.com/file/d/1zoZC0rROnhB5U4r_pfOE2jZRYqxyrFSx/view?usp=sharing" target="_blank">Data Analysis Using Excel</a></h3>
+                                <p>
+                                    Utilizing advanced tools for data analysis and designing dashboards in Excel to extract valuable insights has improved the accuracy of reports and facilitated effective data-driven decision-making.
+                                </p>
+
+                            </div>
+                        </div>
+                        <h2 class="titlee">Project</h2>
+
+                        <div class="timeline-content">
+                            <div class="conttent">
+                                <div class="year"><i class='bx bxs-calendar'></i>Oct 2023 - Present</div>
+                                <h3><a href="https://www.youtube.com/watch?v=hyM-EVPBD9s" target="_blank">Safebag System</a></h3>
+                                <p>
+                                    "SafeBag" is an innovative and smart system for baggage management and safety at airports, utilizing advanced technologies like RFID and NFC. The system leverages the NFC feature in the Saudi passport to verify the traveler's identity and baggage ownership, enhancing security and ensuring real-time tracking of bags throughout the journey. This system aims to reduce financial losses for airlines and improve the traveler experience by ensuring secure baggage delivery. It also contributes to the development of Saudi airports, boosting their technological capabilities in line with Vision 2030.
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="timeline-column">
+                    <h2 class="titlee">Experience</h2>
+
+                    <div class="timeline-boxx">
+
+                        <div class="timeline-content">
+                            <div class="conttent">
+                                <div class="year"><i class='bx bxs-calendar'></i>Oct 2023 - Present</div>
+                                <h3><a href="https://www.rodudapp.com/" target="_blank">Software Engineer - Rodud L.S.C</a></h3>
+                                <p> As a Software Engineer in the logistics field, I was responsible for programming
+                                    logistics applications | platforms, analyzing and studying projects from inception to
+                                    launch. I focused on optimizing logistics processes through the development of
+                                    innovative software solutions. Additionally, I contributed to the business
+                                    development committee, helping to formulate effective strategies and providing
+                                    support and guidance to ensure improved efficiency and meet customer needs.
+
+
+                                </p>
+
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-content">
+                            <div class="conttent">
+                                <div class="year"><i class='bx bxs-calendar'></i>Nov 2011 - Present</div>
+                                <h3><a href="https://x.com/mayar_alardii/status/1842418510108016654?s=46" target="_blank">Mawhiba</a></h3>
+                                <p> 
+                                    I worked at the King Abdulaziz and His Companions Foundation, where I participated in designing and implementing training programs and workshops to develop creative skills. I collaborated with multidisciplinary teams to develop innovative research projects, contributing to the enhancement of scientific culture and support for gifted individuals in the kingdom.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-content">
+                            <div class="conttent">
+                                <div class="year"><i class='bx bxs-calendar'></i> Jul 2023 - Sep 2023 </div>
+                                <h3><a href="https://drive.google.com/file/d/1iDn9k9l5SJ0mfur4cvujxFDO3-7aCyvE/view?usp=sharing" target="_blank">IOT - Taibah Valley</a></h3>
+                                <p> In my training in the field of Internet of Things (IoT), I learned about communication technologies and device integration. I gained skills in Arduino programming and various IoT applications, along with an understanding of the different layers of the system. My experience included hands-on projects that enhanced my technical knowledge, allowing me to apply concepts in real-world environments.
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <h2 class="My-Project">My Awards</h2>
+    
+    </section>
+
+    <section class="awards" id="awards">
+        <div class="contaiiner">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="image/Taiba-Thon-competition.jpg" alt="Taiba Thon">
+                </div>
+                <div class="ccontent"> 
+                    <h2>Taiba Thon <i class="fas fa-trophy"></i></h2> 
+                    <p>
+                        I proudly achieved <strong>3rd place</strong> in the Taiba-thon Competition by Taiba University, 
+                        in the <strong>Best Graduation Projects</strong> category, out of <strong>580 projects</strong>. 
+                        A rewarding experience that highlighted my <strong>passion for innovation</strong>.
+                    </p>
+                    <a href="https://x.com/mayar_alardii/status/1666082996057948162?s=46" target="_blank">Watch Video</a>
+                </div>
+            </div>
+            
+    
+            <div class="card">
+                <div class="imgBox">
+                    <img src="image/Saudi-Data-Communication.jpg" alt="Saudi Data Communication">
+                </div>
+                <div class="ccontent"> 
+                    <h2>Saudi Data Communication <i class="fas fa-medal"></i></h2> 
+                    <p>I proudly achieved <strong>3rd place</strong> in the <strong>Saudi Data Communication Competition</strong>, competing against <strong>200 projects</strong> from universities across Saudi Arabia. A remarkable experience that reflected my commitment to innovation and excellence.</p>
+                    <a href="https://x.com/mayar_alardii/status/1703477754329514363?s=46" target="_blank">Watch Video</a>
+                </div>
+            </div>
+            
+    
+            <div class="card">
+                <div class="imgBox">
+                    <img src="image/Abdulrahman-bin-Faisal-University.jpg" alt="Abdulrahman bin Faisal University">
+                </div>
+                <div class="ccontent">
+                    <h2>Imam Abdulrahman Bin Faisal <i class="fas fa-trophy"></i></h2> <!-- إضافة أيقونة كأس -->
+                    <p><strong>Fiercely qualified among the top 20 projects</strong> in the competition organized by <strong>Imam Abdulrahman Bin Faisal University</strong>, out of <strong>150 projects</strong> from universities across Saudi Arabia.</p>
+                    <a href="https://x.com/mayar_alardii/status/1792244323859181573?s=46" target="_blank">Watch Video</a>
+                </div>
+            </div>
+            
+    
+            <div class="card">
+                <div class="imgBox">
+                    <img src="image/She-Codes.jpg" alt="She Codes 2024">
+                </div>
+                <div class="ccontent"> 
+                    <h2>She Codes 2024 <i class="fas fa-code"></i></h2> <!-- إضافة أيقونة كود -->
+                    <p>I proudly won the <strong>Best Scientific Poster</strong> award in the <strong>She Codes 2024</strong> competition organized by <strong>Princess Nourah University</strong></p>
+                    <a href="https://x.com/mayar_alardii/status/1790014745631695324?s=46" target="_blank">Watch Video</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content-aboutme">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbz4h5cV36N3CRI2KeFz_SWovxudo_lN4w6lUW1FNM5UXqWlXh8QW8C2r7CKxDRXXx63/exec" method="POST">
+                <div class="form-fields">
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input name="fullname" type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input name="email" type="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input name="number" type="number" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="input-field">
+                            <input name="subject" type="text" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="textarea-field">
+                        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    </div>
+                </div>
+                <div class="btnn-box">
+                    <button type="submit" class="btnn btnn-large">Send</button>
+                </div>
+            </form>
+    
+            <!-- إشعار النجاح -->
+            <div id="success-message" class="notification success">
+                Your message has been sent successfully!
+            </div>
+    
+            <!-- إشعار الخطأ -->
+            <div id="error-message" class="notification error">
+                Something went wrong, please try again.
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer-section bg-dark text-white text-center py-4">
+        <div class="containerr">
+            <p class="m-0">All rights reserved © 2025 Mutaz Albouq</p>
+        </div>
+    </footer>
+
+    <!--Script for Nav -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // احصل على العناصر المطلوبة
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    // إضافة حدث عند الضغط على hamburger
+    menuToggle.addEventListener('click', () => {
+        // التبديل بين فتح وغلق القائمة
+        navLinks.classList.toggle('active');
+        // التبديل بين شكل الهامبرغر و "X"
+        menuToggle.classList.toggle('active');
+    });
+</script>
+
+    <!--Script for home -->
+
+
+    <!--Script for about me -->
     <script>
-        // تأثيرات تفاعلية بسيطة
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // وظيفة لاكتشاف التمرير وتطبيق التأثيرات
+        document.addEventListener("scroll", function() {
+          const aboutSection = document.querySelector('.about');
+          const aboutMeText = document.querySelector('.aboutme');
+          const infoText = document.querySelector('.info');
+      
+          // دالة لتفعيل التأثير على العناصر
+          function activateEffect(element) {
+            if (element) {
+              element.style.opacity = 1;
+              element.style.transform = "translateY(0)";
+            }
+          }
+      
+          // دالة لإعادة التأثير إذا خرج العنصر من الشاشة
+          function deactivateEffect(element) {
+            if (element) {
+              element.style.opacity = 0;
+              element.style.transform = "translateY(20px)";
+            }
+          }
+      
+          // حساب مواضع العناصر
+          const aboutPosition = aboutSection.getBoundingClientRect().top;
+          const infoPosition = infoText.getBoundingClientRect().top;
+      
+          // عند وصول العنصر إلى الشاشة، نقوم بتفعيل التأثيرات
+          if (aboutPosition < window.innerHeight * 0.8) {
+            activateEffect(aboutMeText);
+          } else {
+            deactivateEffect(aboutMeText); // إعادة التأثير عند الخروج
+          }
+      
+          if (infoPosition < window.innerHeight * 0.8) {
+            activateEffect(infoText);
+          } else {
+            deactivateEffect(infoText); // إعادة التأثير عند الخروج
+          }
         });
-    </script>
+      </script>
+    <!--Script for ex -->
+
+      
+   <!--Script for Contact me-->
+   <SCript>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // منع الإرسال التقليدي
+
+    const successMessage = document.getElementById('success-message');
+    const errorMessage = document.getElementById('error-message');
+
+    // إظهار رسالة النجاح
+    successMessage.classList.add('show');
+    errorMessage.classList.remove('show');
+
+    // إخفاء الإشعار بعد 3 ثوانٍ
+    setTimeout(() => {
+        successMessage.classList.remove('show');
+    }, 3000);
+
+    // استهداف جميع الحقول المدخلة ومسح قيمها
+    const inputs = document.querySelectorAll('.form-fields input, .form-fields textarea');
+    const formData = new FormData();
+
+    inputs.forEach(input => {
+        formData.append(input.name, input.value); // إضافة البيانات إلى FormData
+        input.value = ''; // مسح القيم بعد الإرسال
+    });
+
+    // إرسال البيانات باستخدام fetch
+    fetch(event.target.action, {
+        method: 'POST',
+        body: formData,
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.result !== "success") {
+                successMessage.classList.remove('show');
+                errorMessage.classList.add('show');
+                setTimeout(() => {
+                    errorMessage.classList.remove('show');
+                }, 3000);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            successMessage.classList.remove('show');
+            errorMessage.classList.add('show');
+            setTimeout(() => {
+                errorMessage.classList.remove('show');
+            }, 6000);
+        });
+});
+
+   </SCript>
+   <script>
+    document.addEventListener("scroll", function () {
+  // تحديد جميع العناصر التي تحتاج تأثير
+  const elementsToAnimate = document.querySelectorAll(
+    '.headingg, .mydreams, .titlee, .timeline-content, .timeline-boxx'
+  );
+
+  // دالة لتفعيل التأثير
+  function activateEffect(element, delay = 0) {
+    if (element) {
+      element.style.transitionDelay = `${delay}s`; // تأخير التأثير
+      element.style.opacity = 1;
+      element.style.transform = "translateY(0)";
+    }
+  }
+
+  // دالة لإعادة التأثير إذا خرج العنصر
+  function deactivateEffect(element) {
+    if (element) {
+      element.style.transitionDelay = "0s"; // إعادة التهيئة بدون تأخير
+      element.style.opacity = 0;
+      element.style.transform = "translateY(20px)"; // تقليل الحركة للأسفل
+    }
+  }
+
+  // التحقق من حالة كل عنصر
+  elementsToAnimate.forEach((element, index) => {
+    const elementPosition = element.getBoundingClientRect().top;
+    const delay = index * 0.05; // تقليل التأخير بين العناصر
+
+    if (elementPosition < window.innerHeight * 0.85) {
+      activateEffect(element, delay);
+    } else {
+      deactivateEffect(element); // إعادة الحركة إذا خرج العنصر
+    }
+  });
+});
+  </script>
+  
+
+
 </body>
+
 </html>
