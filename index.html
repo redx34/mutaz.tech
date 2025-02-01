@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تعريفي لعرض شهاداتي العلمية والعملية</title>
+    <style>
+        /* تنسيقات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0f0f1f;
+            color: #ffffff;
+        }
+
+        /* شريط التنقل */
+        .navbar {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(15, 15, 31, 0.9);
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        /* قسم البطل (Hero Section) */
+        .hero {
+            text-align: center;
+            padding: 150px 20px;
+            background: linear-gradient(45deg, #2a2a4a, #0f0f1f);
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00ff88, #00a3ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* أزرار */
+        .btn {
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: none;
+            margin: 20px 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #00ff88, #00a3ff);
+            color: #0f0f1f;
+        }
+
+        /* معرض الصور */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mutaz tech</div>
+        <div>
+            <a href="#home">الرئيسية</a>
+            <a href="#gallery">المعرض</a>
+            <a href="#about">عنّا</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>أنشئ فنونًا بالذكاء الاصطناعي</h1>
+        <p>حوّل أفكارك إلى لوحات رقمية مذهلة خلال ثوانٍ</p>
+        <button class="btn btn-primary">ابدأ الآن</button>
+    </section>
+
+    <section class="gallery">
+        <img src="https://source.unsplash.com/random/600x600?ai-art,1" alt="AI Art 1">
+        <img src="https://source.unsplash.com/random/600x600?ai-art,2" alt="AI Art 2">
+        <img src="https://source.unsplash.com/random/600x600?ai-art,3" alt="AI Art 3">
+    </section>
+
+    <script>
+        // تأثيرات تفاعلية بسيطة
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
